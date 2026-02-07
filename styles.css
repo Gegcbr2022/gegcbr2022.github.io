@@ -106,7 +106,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: clamp(32px, 4vw, 54px);
+  font-size: clamp(28px, 6vw, 54px);
   margin: 12px 0;
   line-height: 1.1;
 }
@@ -231,7 +231,7 @@ body {
 }
 
 .section {
-  padding: 60px 6vw;
+  padding: 56px 6vw;
 }
 
 .section h2 {
@@ -351,10 +351,17 @@ body {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  place-items: center;
   background: #fff3e4;
   border-radius: 28px;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-content {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
 }
 
 
@@ -388,7 +395,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+  .hero-cta .btn,
+  .contact-actions .btn {
+    width: 100%;
+  }
+  .section {
+    padding: 40px 6vw;
+  }
+  .hero-sub {
+    font-size: 18px;
+  }
   .contact {
-    padding: 30px;
+    padding: 24px;
   }
 }
